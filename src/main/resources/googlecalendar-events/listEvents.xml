@@ -160,7 +160,7 @@
 			}  	
 				
   			if(uriParams != '') {
-  				uriParams = '?' + uriParams.substring(1);  				
+  				uriParams = '?' + uriParams.toString().substring(1);
   			}
   			
   			mc.setProperty('uri.var.encodedUriParams', uriParams);

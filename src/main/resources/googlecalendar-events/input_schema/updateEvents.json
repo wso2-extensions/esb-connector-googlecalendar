@@ -1,0 +1,162 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "summary": {
+      "id": "http:\/\/wso2jsonschema.org\/summary",
+      "type": "string"
+    },
+    "attendeesOmitted": {
+      "id": "http:\/\/wso2jsonschema.org\/attendeesOmitted",
+      "type": "string"
+    },
+    "alwaysIncludeEmail": {
+      "id": "http:\/\/wso2jsonschema.org\/alwaysIncludeEmail",
+      "type": "string"
+    },
+    "reminders": {
+      "id": "http:\/\/wso2jsonschema.org\/reminders",
+      "type": "string"
+    },
+    "calendarId": {
+      "id": "http:\/\/wso2jsonschema.org\/calendarId",
+      "type": "string"
+    },
+    "etag": {
+      "id": "http:\/\/wso2jsonschema.org\/etag",
+      "type": "string"
+    },
+    "visibility": {
+      "id": "http:\/\/wso2jsonschema.org\/visibility",
+      "type": "string"
+    },
+    "location": {
+      "id": "http:\/\/wso2jsonschema.org\/location",
+      "type": "string"
+    },
+    "colorId": {
+      "id": "http:\/\/wso2jsonschema.org\/colorId",
+      "type": "string"
+    },
+    "originalStartTime": {
+      "id": "http:\/\/wso2jsonschema.org\/originalStartTime",
+      "properties": {
+        "dateTime": {
+          "id": "http:\/\/wso2jsonschema.org\/originalStartTime\/dateTime",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "privateCopy": {
+      "id": "http:\/\/wso2jsonschema.org\/privateCopy",
+      "type": "string"
+    },
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    },
+    "anyoneCanAddSelf": {
+      "id": "http:\/\/wso2jsonschema.org\/anyoneCanAddSelf",
+      "type": "string"
+    },
+    "maxAttendees": {
+      "id": "http:\/\/wso2jsonschema.org\/maxAttendees",
+      "type": "string"
+    },
+    "transparency": {
+      "id": "http:\/\/wso2jsonschema.org\/transparency",
+      "type": "string"
+    },
+    "id": {
+      "id": "http:\/\/wso2jsonschema.org\/id",
+      "type": "string"
+    },
+    "eventId": {
+      "id": "http:\/\/wso2jsonschema.org\/eventId",
+      "type": "string"
+    },
+    "guestsCanSeeOtherGuests": {
+      "id": "http:\/\/wso2jsonschema.org\/guestsCanSeeOtherGuests",
+      "type": "string"
+    },
+    "description": {
+      "id": "http:\/\/wso2jsonschema.org\/description",
+      "type": "string"
+    },
+    "iCalUID": {
+      "id": "http:\/\/wso2jsonschema.org\/iCalUID",
+      "type": "string"
+    },
+    "end": {
+      "id": "http:\/\/wso2jsonschema.org\/end",
+      "properties": {
+        "dateTime": {
+          "id": "http:\/\/wso2jsonschema.org\/end\/dateTime",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "fields": {
+      "id": "http:\/\/wso2jsonschema.org\/fields",
+      "type": "string"
+    },
+    "extendedProperties": {
+      "id": "http:\/\/wso2jsonschema.org\/extendedProperties",
+      "type": "string"
+    },
+    "attendees": {
+      "id": "http:\/\/wso2jsonschema.org\/attendees",
+      "type": "string"
+    },
+    "sendNotifications": {
+      "id": "http:\/\/wso2jsonschema.org\/sendNotifications",
+      "type": "string"
+    },
+    "status": {
+      "id": "http:\/\/wso2jsonschema.org\/status",
+      "type": "string"
+    },
+    "gadget": {
+      "id": "http:\/\/wso2jsonschema.org\/gadget",
+      "type": "string"
+    },
+    "recurrence": {
+      "id": "http:\/\/wso2jsonschema.org\/recurrence",
+      "type": "string"
+    },
+    "source": {
+      "id": "http:\/\/wso2jsonschema.org\/source",
+      "type": "string"
+    },
+    "start": {
+      "id": "http:\/\/wso2jsonschema.org\/start",
+      "properties": {
+        "dateTime": {
+          "id": "http:\/\/wso2jsonschema.org\/start\/dateTime",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "recurringEventId": {
+      "id": "http:\/\/wso2jsonschema.org\/recurringEventId",
+      "type": "string"
+    },
+    "sequence": {
+      "id": "http:\/\/wso2jsonschema.org\/sequence",
+      "type": "number"
+    },
+    "endTimeUnspecified": {
+      "id": "http:\/\/wso2jsonschema.org\/endTimeUnspecified",
+      "type": "string"
+    },
+    "guestsCanInviteOthers": {
+      "id": "http:\/\/wso2jsonschema.org\/guestsCanInviteOthers",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

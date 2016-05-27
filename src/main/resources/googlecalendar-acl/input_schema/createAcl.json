@@ -1,0 +1,42 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "id": {
+      "id": "http:\/\/wso2jsonschema.org\/id",
+      "type": "string"
+    },
+    "scope": {
+      "id": "http:\/\/wso2jsonschema.org\/scope",
+      "properties": {
+        "value": {
+          "id": "http:\/\/wso2jsonschema.org\/scope\/value",
+          "type": "string"
+        },
+        "type": {
+          "id": "http:\/\/wso2jsonschema.org\/scope\/type",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "calendarId": {
+      "id": "http:\/\/wso2jsonschema.org\/calendarId",
+      "type": "string"
+    },
+    "role": {
+      "id": "http:\/\/wso2jsonschema.org\/role",
+      "type": "string"
+    },
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    },
+    "fields": {
+      "id": "http:\/\/wso2jsonschema.org\/fields",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

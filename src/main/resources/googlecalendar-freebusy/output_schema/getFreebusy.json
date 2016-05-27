@@ -1,0 +1,30 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "timeMin": {
+      "id": "http:\/\/wso2jsonschema.org\/timeMin",
+      "type": "string"
+    },
+    "calendars": {
+      "id": "http:\/\/wso2jsonschema.org\/calendars",
+      "properties": {
+        "7p3am6v3md2jjmc904k7ed2pgo@group.calendar.google.com": {
+          "id": "http:\/\/wso2jsonschema.org\/calendars\/7p3am6v3md2jjmc904k7ed2pgo@group.calendar.google.com",
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "timeMax": {
+      "id": "http:\/\/wso2jsonschema.org\/timeMax",
+      "type": "string"
+    },
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

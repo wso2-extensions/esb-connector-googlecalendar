@@ -1,0 +1,24 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "summary": {
+      "id": "http:\/\/wso2jsonschema.org\/summary",
+      "type": "string"
+    },
+    "id": {
+      "id": "http:\/\/wso2jsonschema.org\/id",
+      "type": "string"
+    },
+    "etag": {
+      "id": "http:\/\/wso2jsonschema.org\/etag",
+      "type": "string"
+    },
+    "timeZone": {
+      "id": "http:\/\/wso2jsonschema.org\/timeZone",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

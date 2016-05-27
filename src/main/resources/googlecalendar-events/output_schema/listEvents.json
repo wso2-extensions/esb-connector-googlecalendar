@@ -1,0 +1,142 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "summary": {
+      "id": "http:\/\/wso2jsonschema.org\/summary",
+      "type": "string"
+    },
+    "items": {
+      "id": "http:\/\/wso2jsonschema.org\/items",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/items\/0",
+          "properties": {
+            "summary": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/summary",
+              "type": "string"
+            },
+            "id": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/id",
+              "type": "string"
+            },
+            "reminders": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/reminders",
+              "properties": {
+                "useDefault": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/reminders\/useDefault",
+                  "type": "boolean"
+                }
+              },
+              "type": "object"
+            },
+            "etag": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/etag",
+              "type": "string"
+            },
+            "start": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/start",
+              "properties": {
+                "dateTime": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/start\/dateTime",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "updated": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/updated",
+              "type": "string"
+            },
+            "created": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/created",
+              "type": "string"
+            },
+            "status": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/status",
+              "type": "string"
+            },
+            "sequence": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/sequence",
+              "type": "number"
+            },
+            "organizer": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer",
+              "properties": {
+                "email": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer\/email",
+                  "type": "string"
+                },
+                "self": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer\/self",
+                  "type": "boolean"
+                },
+                "displayName": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer\/displayName",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "iCalUID": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/iCalUID",
+              "type": "string"
+            },
+            "end": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/end",
+              "properties": {
+                "dateTime": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/end\/dateTime",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "kind": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/kind",
+              "type": "string"
+            },
+            "creator": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/creator",
+              "properties": {
+                "email": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/creator\/email",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "htmlLink": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/htmlLink",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      ],
+      "type": "array"
+    },
+    "updated": {
+      "id": "http:\/\/wso2jsonschema.org\/updated",
+      "type": "string"
+    },
+    "description": {
+      "id": "http:\/\/wso2jsonschema.org\/description",
+      "type": "string"
+    },
+    "timeZone": {
+      "id": "http:\/\/wso2jsonschema.org\/timeZone",
+      "type": "string"
+    },
+    "accessRole": {
+      "id": "http:\/\/wso2jsonschema.org\/accessRole",
+      "type": "string"
+    },
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

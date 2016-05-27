@@ -1,0 +1,80 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "alwaysIncludeEmail": {
+      "id": "http:\/\/wso2jsonschema.org\/alwaysIncludeEmail",
+      "type": "boolean"
+    },
+    "calendarId": {
+      "id": "http:\/\/wso2jsonschema.org\/calendarId",
+      "type": "string"
+    },
+    "orderBy": {
+      "id": "http:\/\/wso2jsonschema.org\/orderBy",
+      "type": "string"
+    },
+    "timeZone": {
+      "id": "http:\/\/wso2jsonschema.org\/timeZone",
+      "type": "string"
+    },
+    "singleEvents": {
+      "id": "http:\/\/wso2jsonschema.org\/singleEvents",
+      "type": "boolean"
+    },
+    "pageToken": {
+      "id": "http:\/\/wso2jsonschema.org\/pageToken",
+      "type": "string"
+    },
+    "showHiddenInvitations": {
+      "id": "http:\/\/wso2jsonschema.org\/showHiddenInvitations",
+      "type": "boolean"
+    },
+    "maxResults": {
+      "id": "http:\/\/wso2jsonschema.org\/maxResults",
+      "type": "number"
+    },
+    "maxAttendees": {
+      "id": "http:\/\/wso2jsonschema.org\/maxAttendees",
+      "type": "number"
+    },
+    "sharedExtendedProperty": {
+      "id": "http:\/\/wso2jsonschema.org\/sharedExtendedProperty",
+      "type": "string"
+    },
+    "timeMin": {
+      "id": "http:\/\/wso2jsonschema.org\/timeMin",
+      "type": "string"
+    },
+    "q": {
+      "id": "http:\/\/wso2jsonschema.org\/q",
+      "type": "string"
+    },
+    "iCalUID": {
+      "id": "http:\/\/wso2jsonschema.org\/iCalUID",
+      "type": "string"
+    },
+    "privateExtendedProperty": {
+      "id": "http:\/\/wso2jsonschema.org\/privateExtendedProperty",
+      "type": "string"
+    },
+    "showDeleted": {
+      "id": "http:\/\/wso2jsonschema.org\/showDeleted",
+      "type": "boolean"
+    },
+    "timeMax": {
+      "id": "http:\/\/wso2jsonschema.org\/timeMax",
+      "type": "string"
+    },
+    "updatedMin": {
+      "id": "http:\/\/wso2jsonschema.org\/updatedMin",
+      "type": "string"
+    },
+    "fields": {
+      "id": "http:\/\/wso2jsonschema.org\/fields",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

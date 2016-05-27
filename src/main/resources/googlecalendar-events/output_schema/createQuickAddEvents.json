@@ -1,0 +1,32 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "etag": {
+      "id": "http:\/\/wso2jsonschema.org\/etag",
+      "type": "string"
+    },
+    "end": {
+      "id": "http:\/\/wso2jsonschema.org\/end",
+      "properties": {
+        "dateTime": {
+          "id": "http:\/\/wso2jsonschema.org\/end\/dateTime",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "creator": {
+      "id": "http:\/\/wso2jsonschema.org\/creator",
+      "properties": {
+        "email": {
+          "id": "http:\/\/wso2jsonschema.org\/creator\/email",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    }
+  },
+  "type": "object"
+}
