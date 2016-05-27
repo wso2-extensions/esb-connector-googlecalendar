@@ -1,0 +1,28 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "calendarId": {
+      "id": "http:\/\/wso2jsonschema.org\/calendarId",
+      "type": "string"
+    },
+    "sendNotifications": {
+      "id": "http:\/\/wso2jsonschema.org\/sendNotifications",
+      "type": "boolean"
+    },
+    "eventId": {
+      "id": "http:\/\/wso2jsonschema.org\/eventId",
+      "type": "string"
+    },
+    "fields": {
+      "id": "http:\/\/wso2jsonschema.org\/fields",
+      "type": "string"
+    },
+    "destination": {
+      "id": "http:\/\/wso2jsonschema.org\/destination",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

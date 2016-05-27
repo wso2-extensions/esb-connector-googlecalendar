@@ -1,0 +1,56 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "alwaysIncludeEmail": {
+      "id": "http:\/\/wso2jsonschema.org\/alwaysIncludeEmail",
+      "type": "boolean"
+    },
+    "timeMin": {
+      "id": "http:\/\/wso2jsonschema.org\/timeMin",
+      "type": "string"
+    },
+    "calendarId": {
+      "id": "http:\/\/wso2jsonschema.org\/calendarId",
+      "type": "string"
+    },
+    "eventId": {
+      "id": "http:\/\/wso2jsonschema.org\/eventId",
+      "type": "string"
+    },
+    "originalStart": {
+      "id": "http:\/\/wso2jsonschema.org\/originalStart",
+      "type": "string"
+    },
+    "timeZone": {
+      "id": "http:\/\/wso2jsonschema.org\/timeZone",
+      "type": "string"
+    },
+    "pageToken": {
+      "id": "http:\/\/wso2jsonschema.org\/pageToken",
+      "type": "string"
+    },
+    "showDeleted": {
+      "id": "http:\/\/wso2jsonschema.org\/showDeleted",
+      "type": "boolean"
+    },
+    "timeMax": {
+      "id": "http:\/\/wso2jsonschema.org\/timeMax",
+      "type": "string"
+    },
+    "maxResults": {
+      "id": "http:\/\/wso2jsonschema.org\/maxResults",
+      "type": "number"
+    },
+    "fields": {
+      "id": "http:\/\/wso2jsonschema.org\/fields",
+      "type": "string"
+    },
+    "maxAttendees": {
+      "id": "http:\/\/wso2jsonschema.org\/maxAttendees",
+      "type": "number"
+    }
+  },
+  "type": "object"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "isShowHidden": {
+      "id": "http:\/\/wso2jsonschema.org\/isShowHidden",
+      "type": "string"
+    },
+    "minAccessRole": {
+      "id": "http:\/\/wso2jsonschema.org\/minAccessRole",
+      "type": "string"
+    },
+    "pageToken": {
+      "id": "http:\/\/wso2jsonschema.org\/pageToken",
+      "type": "string"
+    },
+    "maxResults": {
+      "id": "http:\/\/wso2jsonschema.org\/maxResults",
+      "type": "number"
+    },
+    "fields": {
+      "id": "http:\/\/wso2jsonschema.org\/fields",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

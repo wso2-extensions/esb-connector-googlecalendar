@@ -1,0 +1,32 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "alwaysIncludeEmail": {
+      "id": "http:\/\/wso2jsonschema.org\/alwaysIncludeEmail",
+      "type": "boolean"
+    },
+    "calendarId": {
+      "id": "http:\/\/wso2jsonschema.org\/calendarId",
+      "type": "string"
+    },
+    "eventId": {
+      "id": "http:\/\/wso2jsonschema.org\/eventId",
+      "type": "string"
+    },
+    "timeZone": {
+      "id": "http:\/\/wso2jsonschema.org\/timeZone",
+      "type": "string"
+    },
+    "fields": {
+      "id": "http:\/\/wso2jsonschema.org\/fields",
+      "type": "string"
+    },
+    "maxAttendees": {
+      "id": "http:\/\/wso2jsonschema.org\/maxAttendees",
+      "type": "number"
+    }
+  },
+  "type": "object"
+}

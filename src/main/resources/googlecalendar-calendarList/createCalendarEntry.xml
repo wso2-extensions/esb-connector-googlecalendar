@@ -43,8 +43,6 @@
                description="The summary that the authenticated user has set for this calendar."/>
     <parameter name="etag" description="ETag of the resource."/>
     <parameter name="kind" description="Type of the resource 'calendar#calendarListEntry'."/>
-    <parameter name="notificationSettings"
-               description="The method used to deliver the notification. "/>
 
     <sequence>
         <property name="uri.var.fields" expression="$func:fields"/>
@@ -60,7 +58,6 @@
         <property name="uri.var.summaryOverride" expression="$func:summaryOverride"/>
         <property name="uri.var.etag" expression="$func:etag"/>
         <property name="uri.var.kind" expression="$func:kind"/>
-        <property name="uri.var.notificationSettings" expression="$func:notificationSettings"/>
 
         <!-- Building request with mandatory params -->
         <payloadFactory media-type="json">
@@ -93,7 +90,6 @@
 		        var summaryOverride = mc.getProperty('uri.var.summaryOverride');		        		        
 		        var etag = mc.getProperty('uri.var.etag');
 		        var kind = mc.getProperty('uri.var.kind');
-		        var notificationSettings = mc.getProperty("uri.var.notificationSettings"); 
 		        		      		       	
 		       	//url param processing start
 		        var urlParamString = '';
@@ -107,7 +103,7 @@
 				}
 				
 				if(urlParamString != '') {
-					urlParamString = '?' + urlParamString.substring(1);
+					urlParamString = '?' + urlParamString.toString().substring(1);
 				}
 				
 				mc.setProperty('uri.var.urlParamString', urlParamString);
@@ -155,10 +151,6 @@
 				if (kind != null && kind != "") {
 					payload.kind= kind;
 				}
-				
-				if (notificationSettings != null  && notificationSettings != "") { // if empty, remove optional notificationSettings JSON Obj 				
-					payload.notificationSettings = eval("("+notificationSettings+")");			
-				}									
 																											
 				mc.setPayloadJSON(payload);
 				//request body param processing end

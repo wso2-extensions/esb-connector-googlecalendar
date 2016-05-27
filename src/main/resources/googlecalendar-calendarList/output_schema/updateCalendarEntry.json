@@ -1,0 +1,86 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "summary": {
+      "id": "http:\/\/wso2jsonschema.org\/summary",
+      "type": "string"
+    },
+    "etag": {
+      "id": "http:\/\/wso2jsonschema.org\/etag",
+      "type": "string"
+    },
+    "location": {
+      "id": "http:\/\/wso2jsonschema.org\/location",
+      "type": "string"
+    },
+    "backgroundColor": {
+      "id": "http:\/\/wso2jsonschema.org\/backgroundColor",
+      "type": "string"
+    },
+    "colorId": {
+      "id": "http:\/\/wso2jsonschema.org\/colorId",
+      "type": "string"
+    },
+    "timeZone": {
+      "id": "http:\/\/wso2jsonschema.org\/timeZone",
+      "type": "string"
+    },
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    },
+    "id": {
+      "id": "http:\/\/wso2jsonschema.org\/id",
+      "type": "string"
+    },
+    "selected": {
+      "id": "http:\/\/wso2jsonschema.org\/selected",
+      "type": "boolean"
+    },
+    "notificationSettings": {
+      "id": "http:\/\/wso2jsonschema.org\/notificationSettings",
+      "properties": {
+        "notifications": {
+          "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications",
+          "items": [
+            {
+              "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications\/0",
+              "properties": {
+                "method": {
+                  "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications\/0\/method",
+                  "type": "string"
+                },
+                "type": {
+                  "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications\/0\/type",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          ],
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "description": {
+      "id": "http:\/\/wso2jsonschema.org\/description",
+      "type": "string"
+    },
+    "accessRole": {
+      "id": "http:\/\/wso2jsonschema.org\/accessRole",
+      "type": "string"
+    },
+    "summaryOverride": {
+      "id": "http:\/\/wso2jsonschema.org\/summaryOverride",
+      "type": "string"
+    },
+    "foregroundColor": {
+      "id": "http:\/\/wso2jsonschema.org\/foregroundColor",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

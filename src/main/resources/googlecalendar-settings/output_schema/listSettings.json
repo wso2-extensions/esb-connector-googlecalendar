@@ -1,0 +1,48 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "etag": {
+      "id": "http:\/\/wso2jsonschema.org\/etag",
+      "type": "string"
+    },
+    "items": {
+      "id": "http:\/\/wso2jsonschema.org\/items",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/items\/0",
+          "properties": {
+            "id": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/id",
+              "type": "string"
+            },
+            "etag": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/etag",
+              "type": "string"
+            },
+            "value": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/value",
+              "type": "string"
+            },
+            "kind": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/kind",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      ],
+      "type": "array"
+    },
+    "nextSyncToken": {
+      "id": "http:\/\/wso2jsonschema.org\/nextSyncToken",
+      "type": "string"
+    },
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

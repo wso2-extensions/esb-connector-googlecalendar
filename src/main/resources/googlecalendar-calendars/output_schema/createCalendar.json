@@ -1,0 +1,32 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "summary": {
+      "id": "http:\/\/wso2jsonschema.org\/summary",
+      "type": "string"
+    },
+    "id": {
+      "id": "http:\/\/wso2jsonschema.org\/id",
+      "type": "string"
+    },
+    "etag": {
+      "id": "http:\/\/wso2jsonschema.org\/etag",
+      "type": "string"
+    },
+    "location": {
+      "id": "http:\/\/wso2jsonschema.org\/location",
+      "type": "string"
+    },
+    "description": {
+      "id": "http:\/\/wso2jsonschema.org\/description",
+      "type": "string"
+    },
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

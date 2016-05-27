@@ -1,0 +1,108 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "reminders": {
+      "id": "http:\/\/wso2jsonschema.org\/reminders",
+      "properties": {
+        "useDefault": {
+          "id": "http:\/\/wso2jsonschema.org\/reminders\/useDefault",
+          "type": "boolean"
+        }
+      },
+      "type": "object"
+    },
+    "etag": {
+      "id": "http:\/\/wso2jsonschema.org\/etag",
+      "type": "string"
+    },
+    "status": {
+      "id": "http:\/\/wso2jsonschema.org\/status",
+      "type": "string"
+    },
+    "location": {
+      "id": "http:\/\/wso2jsonschema.org\/location",
+      "type": "string"
+    },
+    "organizer": {
+      "id": "http:\/\/wso2jsonschema.org\/organizer",
+      "properties": {
+        "email": {
+          "id": "http:\/\/wso2jsonschema.org\/organizer\/email",
+          "type": "string"
+        },
+        "self": {
+          "id": "http:\/\/wso2jsonschema.org\/organizer\/self",
+          "type": "boolean"
+        },
+        "displayName": {
+          "id": "http:\/\/wso2jsonschema.org\/organizer\/displayName",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    },
+    "creator": {
+      "id": "http:\/\/wso2jsonschema.org\/creator",
+      "properties": {
+        "email": {
+          "id": "http:\/\/wso2jsonschema.org\/creator\/email",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "id": {
+      "id": "http:\/\/wso2jsonschema.org\/id",
+      "type": "string"
+    },
+    "guestsCanSeeOtherGuests": {
+      "id": "http:\/\/wso2jsonschema.org\/guestsCanSeeOtherGuests",
+      "type": "boolean"
+    },
+    "created": {
+      "id": "http:\/\/wso2jsonschema.org\/created",
+      "type": "string"
+    },
+    "updated": {
+      "id": "http:\/\/wso2jsonschema.org\/updated",
+      "type": "string"
+    },
+    "start": {
+      "id": "http:\/\/wso2jsonschema.org\/start",
+      "properties": {
+        "dateTime": {
+          "id": "http:\/\/wso2jsonschema.org\/start\/dateTime",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "guestsCanInviteOthers": {
+      "id": "http:\/\/wso2jsonschema.org\/guestsCanInviteOthers",
+      "type": "boolean"
+    },
+    "sequence": {
+      "id": "http:\/\/wso2jsonschema.org\/sequence",
+      "type": "number"
+    },
+    "description": {
+      "id": "http:\/\/wso2jsonschema.org\/description",
+      "type": "string"
+    },
+    "iCalUID": {
+      "id": "http:\/\/wso2jsonschema.org\/iCalUID",
+      "type": "string"
+    },
+    "htmlLink": {
+      "id": "http:\/\/wso2jsonschema.org\/htmlLink",
+      "type": "string"
+    }
+  },
+  "type": "object"
+}

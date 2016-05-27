@@ -69,7 +69,7 @@
 					}
 					
 					if(urlParamString != '') {
-						urlParamString = '?' + urlParamString.substring(1);
+						urlParamString = '?' + urlParamString.toString().substring(1);
 					}
 					
 					mc.setProperty('uri.var.urlParamString', urlParamString);

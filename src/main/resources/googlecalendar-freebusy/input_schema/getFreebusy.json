@@ -1,0 +1,44 @@
+{
+  "id": "http:\/\/wso2jsonschema.org",
+  "title": "root",
+  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "properties": {
+    "timeMin": {
+      "id": "http:\/\/wso2jsonschema.org\/timeMin",
+      "type": "string"
+    },
+    "items": {
+      "id": "http:\/\/wso2jsonschema.org\/items",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/items\/0",
+          "properties": {
+            "id": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/id",
+              "type": "string"
+            }
+          },
+          "type": "object"
+        }
+      ],
+      "type": "array"
+    },
+    "timeZone": {
+      "id": "http:\/\/wso2jsonschema.org\/timeZone",
+      "type": "string"
+    },
+    "groupExpansionMax": {
+      "id": "http:\/\/wso2jsonschema.org\/groupExpansionMax",
+      "type": "number"
+    },
+    "timeMax": {
+      "id": "http:\/\/wso2jsonschema.org\/timeMax",
+      "type": "string"
+    },
+    "calendarExpansionMax": {
+      "id": "http:\/\/wso2jsonschema.org\/calendarExpansionMax",
+      "type": "number"
+    }
+  },
+  "type": "object"
+}
