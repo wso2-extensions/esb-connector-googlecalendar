@@ -1,39 +1,41 @@
 {
   "id": "http:\/\/wso2jsonschema.org",
   "title": "root",
-  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
   "properties": {
-    "id": {
-      "id": "http:\/\/wso2jsonschema.org\/id",
-      "type": "string"
+    "fields": {
+      "id": "http:\/\/wso2jsonschema.org\/fields",
+      "type": "string",
+      "nullable": "true"
     },
     "summary": {
       "id": "http:\/\/wso2jsonschema.org\/summary",
       "type": "string"
     },
-    "etag": {
-      "id": "http:\/\/wso2jsonschema.org\/etag",
-      "type": "string"
-    },
-    "location": {
-      "id": "http:\/\/wso2jsonschema.org\/location",
-      "type": "string"
+    "id": {
+      "id": "http:\/\/wso2jsonschema.org\/id",
+      "type": "string",
+      "nullable": "true"
     },
     "description": {
       "id": "http:\/\/wso2jsonschema.org\/description",
-      "type": "string"
-    },
-    "timeZone": {
-      "id": "http:\/\/wso2jsonschema.org\/timeZone",
-      "type": "string"
+      "type": "string",
+      "nullable": "true"
     },
     "kind": {
       "id": "http:\/\/wso2jsonschema.org\/kind",
-      "type": "string"
+      "type": "string",
+      "nullable": "true"
     },
-    "fields": {
-      "id": "http:\/\/wso2jsonschema.org\/fields",
-      "type": "string"
+    "location": {
+      "id": "http:\/\/wso2jsonschema.org\/location",
+      "type": "string",
+      "nullable": "true"
+    },
+    "timeZone": {
+      "id": "http:\/\/wso2jsonschema.org\/timeZone",
+      "type": "string",
+      "nullable": "true"
     }
   },
   "type": "object"

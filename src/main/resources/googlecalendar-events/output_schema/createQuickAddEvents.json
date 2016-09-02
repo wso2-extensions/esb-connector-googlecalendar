@@ -1,31 +1,31 @@
 {
   "id": "http:\/\/wso2jsonschema.org",
   "title": "root",
-  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
   "properties": {
     "etag": {
       "id": "http:\/\/wso2jsonschema.org\/etag",
       "type": "string"
     },
-    "end": {
-      "id": "http:\/\/wso2jsonschema.org\/end",
-      "properties": {
-        "dateTime": {
-          "id": "http:\/\/wso2jsonschema.org\/end\/dateTime",
-          "type": "string"
-        }
-      },
-      "type": "object"
-    },
     "creator": {
       "id": "http:\/\/wso2jsonschema.org\/creator",
+      "type": "object",
       "properties": {
         "email": {
           "id": "http:\/\/wso2jsonschema.org\/creator\/email",
           "type": "string"
         }
-      },
-      "type": "object"
+      }
+    },
+    "end": {
+      "id": "http:\/\/wso2jsonschema.org\/end",
+      "type": "object",
+      "properties": {
+        "dateTime": {
+          "id": "http:\/\/wso2jsonschema.org\/end\/dateTime",
+          "type": "string"
+        }
+      }
     }
   },
   "type": "object"

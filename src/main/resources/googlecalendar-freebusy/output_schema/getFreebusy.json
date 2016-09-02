@@ -1,29 +1,51 @@
 {
   "id": "http:\/\/wso2jsonschema.org",
   "title": "root",
-  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
   "properties": {
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    },
     "timeMin": {
       "id": "http:\/\/wso2jsonschema.org\/timeMin",
       "type": "string"
-    },
-    "calendars": {
-      "id": "http:\/\/wso2jsonschema.org\/calendars",
-      "properties": {
-        "7p3am6v3md2jjmc904k7ed2pgo@group.calendar.google.com": {
-          "id": "http:\/\/wso2jsonschema.org\/calendars\/7p3am6v3md2jjmc904k7ed2pgo@group.calendar.google.com",
-          "type": "object"
-        }
-      },
-      "type": "object"
     },
     "timeMax": {
       "id": "http:\/\/wso2jsonschema.org\/timeMax",
       "type": "string"
     },
-    "kind": {
-      "id": "http:\/\/wso2jsonschema.org\/kind",
-      "type": "string"
+    "calendars": {
+      "id": "http:\/\/wso2jsonschema.org\/calendars",
+      "type": "object",
+      "properties": {
+        "8tcth3r5hnfs83jg690l1f8tf4@group.calendar.google.com": {
+          "id": "http:\/\/wso2jsonschema.org\/calendars\/8tcth3r5hnfs83jg690l1f8tf4@group.calendar.google.com",
+          "type": "object",
+          "properties": {
+            "busy": {
+              "id": "http:\/\/wso2jsonschema.org\/calendars\/8tcth3r5hnfs83jg690l1f8tf4@group.calendar.google.com\/busy",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http:\/\/wso2jsonschema.org\/calendars\/8tcth3r5hnfs83jg690l1f8tf4@group.calendar.google.com\/busy\/0",
+                  "type": "object",
+                  "properties": {
+                    "start": {
+                      "id": "http:\/\/wso2jsonschema.org\/calendars\/8tcth3r5hnfs83jg690l1f8tf4@group.calendar.google.com\/busy\/0\/start",
+                      "type": "string"
+                    },
+                    "end": {
+                      "id": "http:\/\/wso2jsonschema.org\/calendars\/8tcth3r5hnfs83jg690l1f8tf4@group.calendar.google.com\/busy\/0\/end",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
     }
   },
   "type": "object"

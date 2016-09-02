@@ -1,105 +1,105 @@
 {
   "id": "http:\/\/wso2jsonschema.org",
   "title": "root",
-  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
   "properties": {
-    "summary": {
-      "id": "http:\/\/wso2jsonschema.org\/summary",
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
       "type": "string"
     },
     "etag": {
       "id": "http:\/\/wso2jsonschema.org\/etag",
       "type": "string"
     },
+    "id": {
+      "id": "http:\/\/wso2jsonschema.org\/id",
+      "type": "string"
+    },
+    "summary": {
+      "id": "http:\/\/wso2jsonschema.org\/summary",
+      "type": "string"
+    },
+    "description": {
+      "id": "http:\/\/wso2jsonschema.org\/description",
+      "type": "string"
+    },
     "location": {
       "id": "http:\/\/wso2jsonschema.org\/location",
-      "type": "string"
-    },
-    "backgroundColor": {
-      "id": "http:\/\/wso2jsonschema.org\/backgroundColor",
-      "type": "string"
-    },
-    "colorId": {
-      "id": "http:\/\/wso2jsonschema.org\/colorId",
       "type": "string"
     },
     "timeZone": {
       "id": "http:\/\/wso2jsonschema.org\/timeZone",
       "type": "string"
     },
-    "kind": {
-      "id": "http:\/\/wso2jsonschema.org\/kind",
+    "summaryOverride": {
+      "id": "http:\/\/wso2jsonschema.org\/summaryOverride",
       "type": "string"
     },
-    "defaultReminders": {
-      "id": "http:\/\/wso2jsonschema.org\/defaultReminders",
-      "items": [
-        {
-          "id": "http:\/\/wso2jsonschema.org\/defaultReminders\/0",
-          "properties": {
-            "minutes": {
-              "id": "http:\/\/wso2jsonschema.org\/defaultReminders\/0\/minutes",
-              "type": "number"
-            },
-            "method": {
-              "id": "http:\/\/wso2jsonschema.org\/defaultReminders\/0\/method",
-              "type": "string"
-            }
-          },
-          "type": "object"
-        }
-      ],
-      "type": "array"
+    "colorId": {
+      "id": "http:\/\/wso2jsonschema.org\/colorId",
+      "type": "string"
     },
-    "id": {
-      "id": "http:\/\/wso2jsonschema.org\/id",
+    "backgroundColor": {
+      "id": "http:\/\/wso2jsonschema.org\/backgroundColor",
+      "type": "string"
+    },
+    "foregroundColor": {
+      "id": "http:\/\/wso2jsonschema.org\/foregroundColor",
       "type": "string"
     },
     "selected": {
       "id": "http:\/\/wso2jsonschema.org\/selected",
       "type": "boolean"
     },
-    "notificationSettings": {
-      "id": "http:\/\/wso2jsonschema.org\/notificationSettings",
-      "properties": {
-        "notifications": {
-          "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications",
-          "items": [
-            {
-              "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications\/0",
-              "properties": {
-                "method": {
-                  "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications\/0\/method",
-                  "type": "string"
-                },
-                "type": {
-                  "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications\/0\/type",
-                  "type": "string"
-                }
-              },
-              "type": "object"
-            }
-          ],
-          "type": "array"
-        }
-      },
-      "type": "object"
-    },
-    "description": {
-      "id": "http:\/\/wso2jsonschema.org\/description",
-      "type": "string"
-    },
     "accessRole": {
       "id": "http:\/\/wso2jsonschema.org\/accessRole",
       "type": "string"
     },
-    "summaryOverride": {
-      "id": "http:\/\/wso2jsonschema.org\/summaryOverride",
-      "type": "string"
+    "defaultReminders": {
+      "id": "http:\/\/wso2jsonschema.org\/defaultReminders",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/defaultReminders\/0",
+          "type": "object",
+          "properties": {
+            "method": {
+              "id": "http:\/\/wso2jsonschema.org\/defaultReminders\/0\/method",
+              "type": "string"
+            },
+            "minutes": {
+              "id": "http:\/\/wso2jsonschema.org\/defaultReminders\/0\/minutes",
+              "type": "number"
+            }
+          }
+        }
+      ]
     },
-    "foregroundColor": {
-      "id": "http:\/\/wso2jsonschema.org\/foregroundColor",
-      "type": "string"
+    "notificationSettings": {
+      "id": "http:\/\/wso2jsonschema.org\/notificationSettings",
+      "type": "object",
+      "properties": {
+        "notifications": {
+          "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications",
+          "type": "array",
+          "items": [
+            {
+              "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications\/0",
+              "type": "object",
+              "properties": {
+                "type": {
+                  "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications\/0\/type",
+                  "type": "string"
+                },
+                "method": {
+                  "id": "http:\/\/wso2jsonschema.org\/notificationSettings\/notifications\/0\/method",
+                  "type": "string"
+                }
+              }
+            }
+          ]
+        }
+      }
     }
   },
   "type": "object"

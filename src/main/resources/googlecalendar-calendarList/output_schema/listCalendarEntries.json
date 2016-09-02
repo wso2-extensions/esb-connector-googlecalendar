@@ -1,79 +1,83 @@
 {
   "id": "http:\/\/wso2jsonschema.org",
   "title": "root",
-  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
   "properties": {
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    },
     "etag": {
       "id": "http:\/\/wso2jsonschema.org\/etag",
       "type": "string"
     },
+    "nextPageToken": {
+      "id": "http:\/\/wso2jsonschema.org\/nextPageToken",
+      "type": "string"
+    },
+    "nextSyncToken": {
+      "id": "http:\/\/wso2jsonschema.org\/nextSyncToken",
+      "type": "string"
+    },
     "items": {
       "id": "http:\/\/wso2jsonschema.org\/items",
+      "type": "array",
       "items": [
         {
           "id": "http:\/\/wso2jsonschema.org\/items\/0",
+          "type": "object",
           "properties": {
-            "summary": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/summary",
+            "kind": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/kind",
+              "type": "string"
+            },
+            "etag": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/etag",
               "type": "string"
             },
             "id": {
               "id": "http:\/\/wso2jsonschema.org\/items\/0\/id",
               "type": "string"
             },
-            "selected": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/selected",
-              "type": "boolean"
-            },
-            "etag": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/etag",
-              "type": "string"
-            },
-            "backgroundColor": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/backgroundColor",
-              "type": "string"
-            },
-            "location": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/location",
+            "summary": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/summary",
               "type": "string"
             },
             "description": {
               "id": "http:\/\/wso2jsonschema.org\/items\/0\/description",
               "type": "string"
             },
-            "colorId": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/colorId",
+            "location": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/location",
               "type": "string"
             },
             "timeZone": {
               "id": "http:\/\/wso2jsonschema.org\/items\/0\/timeZone",
               "type": "string"
             },
-            "accessRole": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/accessRole",
+            "colorId": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/colorId",
+              "type": "string"
+            },
+            "backgroundColor": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/backgroundColor",
               "type": "string"
             },
             "foregroundColor": {
               "id": "http:\/\/wso2jsonschema.org\/items\/0\/foregroundColor",
               "type": "string"
             },
-            "kind": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/kind",
+            "selected": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/selected",
+              "type": "boolean"
+            },
+            "accessRole": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/accessRole",
               "type": "string"
             }
-          },
-          "type": "object"
+          }
         }
-      ],
-      "type": "array"
-    },
-    "nextSyncToken": {
-      "id": "http:\/\/wso2jsonschema.org\/nextSyncToken",
-      "type": "string"
-    },
-    "kind": {
-      "id": "http:\/\/wso2jsonschema.org\/kind",
-      "type": "string"
+      ]
     }
   },
   "type": "object"

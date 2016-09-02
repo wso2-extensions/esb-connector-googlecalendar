@@ -1,30 +1,34 @@
 {
   "id": "http:\/\/wso2jsonschema.org",
   "title": "root",
-  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
   "properties": {
-    "summary": {
-      "id": "http:\/\/wso2jsonschema.org\/summary",
-      "type": "string"
-    },
-    "id": {
-      "id": "http:\/\/wso2jsonschema.org\/id",
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
       "type": "string"
     },
     "etag": {
       "id": "http:\/\/wso2jsonschema.org\/etag",
       "type": "string"
     },
-    "location": {
-      "id": "http:\/\/wso2jsonschema.org\/location",
+    "id": {
+      "id": "http:\/\/wso2jsonschema.org\/id",
+      "type": "string"
+    },
+    "summary": {
+      "id": "http:\/\/wso2jsonschema.org\/summary",
       "type": "string"
     },
     "description": {
       "id": "http:\/\/wso2jsonschema.org\/description",
       "type": "string"
     },
-    "kind": {
-      "id": "http:\/\/wso2jsonschema.org\/kind",
+    "location": {
+      "id": "http:\/\/wso2jsonschema.org\/location",
+      "type": "string"
+    },
+    "timeZone": {
+      "id": "http:\/\/wso2jsonschema.org\/timeZone",
       "type": "string"
     }
   },

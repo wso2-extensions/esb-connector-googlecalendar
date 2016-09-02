@@ -1,22 +1,24 @@
 {
   "id": "http:\/\/wso2jsonschema.org",
   "title": "root",
-  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
   "properties": {
-    "text": {
-      "id": "http:\/\/wso2jsonschema.org\/text",
-      "type": "string"
-    },
     "calendarId": {
       "id": "http:\/\/wso2jsonschema.org\/calendarId",
       "type": "string"
     },
     "sendNotifications": {
       "id": "http:\/\/wso2jsonschema.org\/sendNotifications",
-      "type": "string"
+      "type": "string",
+      "nullable": "true"
     },
     "fields": {
       "id": "http:\/\/wso2jsonschema.org\/fields",
+      "type": "string",
+      "nullable": "true"
+    },
+    "text": {
+      "id": "http:\/\/wso2jsonschema.org\/text",
       "type": "string"
     }
   },
