@@ -43,7 +43,7 @@ public class GoogleCalendarConnectorIntegrationTest extends ConnectorIntegration
     @BeforeClass(alwaysRun = true)
     public void setEnvironment() throws Exception {
 
-        init("googlecalendar-connector-1.0.2");
+        init("googlecalendar-connector-1.0.3-SNAPSHOT");
 
         esbRequestHeadersMap.put("Accept-Charset", "UTF-8");
         esbRequestHeadersMap.put("Content-Type", "application/json");
