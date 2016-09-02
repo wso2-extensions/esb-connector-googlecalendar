@@ -1,16 +1,8 @@
 {
   "id": "http:\/\/wso2jsonschema.org",
   "title": "root",
-  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
   "properties": {
-    "alwaysIncludeEmail": {
-      "id": "http:\/\/wso2jsonschema.org\/alwaysIncludeEmail",
-      "type": "boolean"
-    },
-    "timeMin": {
-      "id": "http:\/\/wso2jsonschema.org\/timeMin",
-      "type": "string"
-    },
     "calendarId": {
       "id": "http:\/\/wso2jsonschema.org\/calendarId",
       "type": "string"
@@ -19,37 +11,55 @@
       "id": "http:\/\/wso2jsonschema.org\/eventId",
       "type": "string"
     },
-    "originalStart": {
-      "id": "http:\/\/wso2jsonschema.org\/originalStart",
-      "type": "string"
+    "alwaysIncludeEmail": {
+      "id": "http:\/\/wso2jsonschema.org\/alwaysIncludeEmail",
+      "type": "boolean",
+      "nullable": "true"
     },
     "timeZone": {
       "id": "http:\/\/wso2jsonschema.org\/timeZone",
-      "type": "string"
-    },
-    "pageToken": {
-      "id": "http:\/\/wso2jsonschema.org\/pageToken",
-      "type": "string"
-    },
-    "showDeleted": {
-      "id": "http:\/\/wso2jsonschema.org\/showDeleted",
-      "type": "boolean"
-    },
-    "timeMax": {
-      "id": "http:\/\/wso2jsonschema.org\/timeMax",
-      "type": "string"
-    },
-    "maxResults": {
-      "id": "http:\/\/wso2jsonschema.org\/maxResults",
-      "type": "number"
-    },
-    "fields": {
-      "id": "http:\/\/wso2jsonschema.org\/fields",
-      "type": "string"
+      "type": "string",
+      "nullable": "true"
     },
     "maxAttendees": {
       "id": "http:\/\/wso2jsonschema.org\/maxAttendees",
-      "type": "number"
+      "type": "number",
+      "nullable": "true"
+    },
+    "maxResults": {
+      "id": "http:\/\/wso2jsonschema.org\/maxResults",
+      "type": "number",
+      "nullable": "true"
+    },
+    "originalStart": {
+      "id": "http:\/\/wso2jsonschema.org\/originalStart",
+      "type": "string",
+      "nullable": "true"
+    },
+    "pageToken": {
+      "id": "http:\/\/wso2jsonschema.org\/pageToken",
+      "type": "string",
+      "nullable": "true"
+    },
+    "showDeleted": {
+      "id": "http:\/\/wso2jsonschema.org\/showDeleted",
+      "type": "boolean",
+      "nullable": "true"
+    },
+    "timeMax": {
+      "id": "http:\/\/wso2jsonschema.org\/timeMax",
+      "type": "string",
+      "nullable": "true"
+    },
+    "timeMin": {
+      "id": "http:\/\/wso2jsonschema.org\/timeMin",
+      "type": "string",
+      "nullable": "true"
+    },
+    "fields": {
+      "id": "http:\/\/wso2jsonschema.org\/fields",
+      "type": "string",
+      "nullable": "true"
     }
   },
   "type": "object"

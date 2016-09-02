@@ -1,128 +1,26 @@
 {
   "id": "http:\/\/wso2jsonschema.org",
   "title": "root",
-  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
   "properties": {
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    },
+    "etag": {
+      "id": "http:\/\/wso2jsonschema.org\/etag",
+      "type": "string"
+    },
     "summary": {
       "id": "http:\/\/wso2jsonschema.org\/summary",
       "type": "string"
     },
-    "items": {
-      "id": "http:\/\/wso2jsonschema.org\/items",
-      "items": [
-        {
-          "id": "http:\/\/wso2jsonschema.org\/items\/0",
-          "properties": {
-            "summary": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/summary",
-              "type": "string"
-            },
-            "id": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/id",
-              "type": "string"
-            },
-            "reminders": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/reminders",
-              "properties": {
-                "useDefault": {
-                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/reminders\/useDefault",
-                  "type": "boolean"
-                }
-              },
-              "type": "object"
-            },
-            "etag": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/etag",
-              "type": "string"
-            },
-            "start": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/start",
-              "properties": {
-                "dateTime": {
-                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/start\/dateTime",
-                  "type": "string"
-                }
-              },
-              "type": "object"
-            },
-            "updated": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/updated",
-              "type": "string"
-            },
-            "created": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/created",
-              "type": "string"
-            },
-            "status": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/status",
-              "type": "string"
-            },
-            "sequence": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/sequence",
-              "type": "number"
-            },
-            "organizer": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer",
-              "properties": {
-                "email": {
-                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer\/email",
-                  "type": "string"
-                },
-                "self": {
-                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer\/self",
-                  "type": "boolean"
-                },
-                "displayName": {
-                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer\/displayName",
-                  "type": "string"
-                }
-              },
-              "type": "object"
-            },
-            "iCalUID": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/iCalUID",
-              "type": "string"
-            },
-            "end": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/end",
-              "properties": {
-                "dateTime": {
-                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/end\/dateTime",
-                  "type": "string"
-                }
-              },
-              "type": "object"
-            },
-            "kind": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/kind",
-              "type": "string"
-            },
-            "creator": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/creator",
-              "properties": {
-                "email": {
-                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/creator\/email",
-                  "type": "string"
-                }
-              },
-              "type": "object"
-            },
-            "htmlLink": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/htmlLink",
-              "type": "string"
-            }
-          },
-          "type": "object"
-        }
-      ],
-      "type": "array"
+    "description": {
+      "id": "http:\/\/wso2jsonschema.org\/description",
+      "type": "string"
     },
     "updated": {
       "id": "http:\/\/wso2jsonschema.org\/updated",
-      "type": "string"
-    },
-    "description": {
-      "id": "http:\/\/wso2jsonschema.org\/description",
       "type": "string"
     },
     "timeZone": {
@@ -133,9 +31,215 @@
       "id": "http:\/\/wso2jsonschema.org\/accessRole",
       "type": "string"
     },
-    "kind": {
-      "id": "http:\/\/wso2jsonschema.org\/kind",
+    "defaultReminders": {
+      "id": "http:\/\/wso2jsonschema.org\/defaultReminders",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/defaultReminders\/0",
+          "type": "object",
+          "properties": {
+            "method": {
+              "id": "http:\/\/wso2jsonschema.org\/defaultReminders\/0\/method",
+              "type": "string"
+            },
+            "minutes": {
+              "id": "http:\/\/wso2jsonschema.org\/defaultReminders\/0\/minutes",
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "nextPageToken": {
+      "id": "http:\/\/wso2jsonschema.org\/nextPageToken",
       "type": "string"
+    },
+    "nextSyncToken": {
+      "id": "http:\/\/wso2jsonschema.org\/nextSyncToken",
+      "type": "string"
+    },
+    "items": {
+      "id": "http:\/\/wso2jsonschema.org\/items",
+      "type": "array",
+      "items": [
+        {
+          "id": "http:\/\/wso2jsonschema.org\/items\/0",
+          "type": "object",
+          "properties": {
+            "kind": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/kind",
+              "type": "string"
+            },
+            "etag": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/etag",
+              "type": "string"
+            },
+            "id": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/id",
+              "type": "string"
+            },
+            "status": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/status",
+              "type": "string"
+            },
+            "htmlLink": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/htmlLink",
+              "type": "string"
+            },
+            "created": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/created",
+              "type": "string"
+            },
+            "updated": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/updated",
+              "type": "string"
+            },
+            "summary": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/summary",
+              "type": "string"
+            },
+            "description": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/description",
+              "type": "string"
+            },
+            "colorId": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/colorId",
+              "type": "string"
+            },
+            "creator": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/creator",
+              "type": "object",
+              "properties": {
+                "email": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/creator\/email",
+                  "type": "string"
+                }
+              }
+            },
+            "organizer": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer",
+              "type": "object",
+              "properties": {
+                "email": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer\/email",
+                  "type": "string"
+                },
+                "displayName": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer\/displayName",
+                  "type": "string"
+                },
+                "self": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/organizer\/self",
+                  "type": "boolean"
+                }
+              }
+            },
+            "start": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/start",
+              "type": "object",
+              "properties": {
+                "dateTime": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/start\/dateTime",
+                  "type": "string"
+                }
+              }
+            },
+            "end": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/end",
+              "type": "object",
+              "properties": {
+                "dateTime": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/end\/dateTime",
+                  "type": "string"
+                }
+              }
+            },
+            "visibility": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/visibility",
+              "type": "string"
+            },
+            "iCalUID": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/iCalUID",
+              "type": "string"
+            },
+            "sequence": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/sequence",
+              "type": "number"
+            },
+            "attendees": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/attendees",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/attendees\/0",
+                  "type": "object",
+                  "properties": {
+                    "email": {
+                      "id": "http:\/\/wso2jsonschema.org\/items\/0\/attendees\/0\/email",
+                      "type": "string"
+                    },
+                    "displayName": {
+                      "id": "http:\/\/wso2jsonschema.org\/items\/0\/attendees\/0\/displayName",
+                      "type": "string"
+                    },
+                    "optional": {
+                      "id": "http:\/\/wso2jsonschema.org\/items\/0\/attendees\/0\/optional",
+                      "type": "boolean"
+                    },
+                    "responseStatus": {
+                      "id": "http:\/\/wso2jsonschema.org\/items\/0\/attendees\/0\/responseStatus",
+                      "type": "string"
+                    },
+                    "comment": {
+                      "id": "http:\/\/wso2jsonschema.org\/items\/0\/attendees\/0\/comment",
+                      "type": "string"
+                    },
+                    "additionalGuests": {
+                      "id": "http:\/\/wso2jsonschema.org\/items\/0\/attendees\/0\/additionalGuests",
+                      "type": "number"
+                    }
+                  }
+                }
+              ]
+            },
+            "anyoneCanAddSelf": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/anyoneCanAddSelf",
+              "type": "boolean"
+            },
+            "reminders": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/reminders",
+              "type": "object",
+              "properties": {
+                "useDefault": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/reminders\/useDefault",
+                  "type": "boolean"
+                },
+                "overrides": {
+                  "id": "http:\/\/wso2jsonschema.org\/items\/0\/reminders\/overrides",
+                  "type": "array",
+                  "items": [
+                    {
+                      "id": "http:\/\/wso2jsonschema.org\/items\/0\/reminders\/overrides\/0",
+                      "type": "object",
+                      "properties": {
+                        "method": {
+                          "id": "http:\/\/wso2jsonschema.org\/items\/0\/reminders\/overrides\/0\/method",
+                          "type": "string"
+                        },
+                        "minutes": {
+                          "id": "http:\/\/wso2jsonschema.org\/items\/0\/reminders\/overrides\/0\/minutes",
+                          "type": "number"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   },
   "type": "object"

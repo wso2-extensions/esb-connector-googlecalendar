@@ -1,47 +1,47 @@
 {
   "id": "http:\/\/wso2jsonschema.org",
   "title": "root",
-  "$schema": "http:\/\/json-schema.org\/draft-04\/schema#",
+  "$schema": "http:\/\/wso2.org\/json-schema\/wso2-data-mapper-v5.0.0\/schema#",
   "properties": {
+    "kind": {
+      "id": "http:\/\/wso2jsonschema.org\/kind",
+      "type": "string"
+    },
     "etag": {
       "id": "http:\/\/wso2jsonschema.org\/etag",
       "type": "string"
     },
+    "nextSyncToken": {
+      "id": "http:\/\/wso2jsonschema.org\/nextSyncToken",
+      "type": "string"
+    },
     "items": {
       "id": "http:\/\/wso2jsonschema.org\/items",
+      "type": "array",
       "items": [
         {
           "id": "http:\/\/wso2jsonschema.org\/items\/0",
+          "type": "object",
           "properties": {
-            "id": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/id",
+            "kind": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/kind",
               "type": "string"
             },
             "etag": {
               "id": "http:\/\/wso2jsonschema.org\/items\/0\/etag",
               "type": "string"
             },
+            "id": {
+              "id": "http:\/\/wso2jsonschema.org\/items\/0\/id",
+              "type": "string"
+            },
             "value": {
               "id": "http:\/\/wso2jsonschema.org\/items\/0\/value",
               "type": "string"
-            },
-            "kind": {
-              "id": "http:\/\/wso2jsonschema.org\/items\/0\/kind",
-              "type": "string"
             }
-          },
-          "type": "object"
+          }
         }
-      ],
-      "type": "array"
-    },
-    "nextSyncToken": {
-      "id": "http:\/\/wso2jsonschema.org\/nextSyncToken",
-      "type": "string"
-    },
-    "kind": {
-      "id": "http:\/\/wso2jsonschema.org\/kind",
-      "type": "string"
+      ]
     }
   },
   "type": "object"
