@@ -4,7 +4,7 @@
     "category": "Productivity Tools",
     "documentationUrl": "https://docs.wso2.org/display/ESBCONNECTORS/Google+Calendar+Connector",
     "description": "The Google Calendar connector allows you to connect to Google Calendar, which lets you create new events, edit or delete existing events as well as search for events.",
-    "status": "Unsupported",
+    "status": "Active",
     "labels": [
         "connector"
     ],
